@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <title>I have many dreams</title>
+    <style type="text/css">
+        body{
+            background: #f57f9c;
+            background-size: cover;
+            min-height: 100%;
+            margin:0;
+            padding:0;
+            position: relative;
+        }
+
+        /*整体居中*/
+        /*父类：header*/
+        #main{
+            width: 100%;
+            min-height: 100%;
+            padding-top:30px;
+        }
+        #help{       
+           /* background: rgb(0, 255, 242);    */
+            width:100%;
+            height: 400px;
+            margin:0 auto;
+        }
+        /*子类：mainner*/
+        #mainner{
+            background: #f3f7f74b;
+            width:40%;
+            margin:0 auto;
+            padding:20px;
+        }
+        #bottom{
+            position: absolute;
+            height: 80px;
+           /* background: #000;*/
+            color: #515353;
+          /*  font-size: 12px;*/
+            width:100%;
+           /* margin:0 auto;*/
+        }
+        .c{
+          /*  background: rgb(154, 1, 255);*/
+            font-size: 12px;
+            line-height: 190%;
+           /* width:100%;*/
+            margin:0 auto;
+            text-align: center;
+        }
+        #well{
+            text-decoration: none;
+            font-size:12px;
+        }
+
+        .headername{
+            font-size: 23px;
+            color:rgb(31, 30, 30);
+            /*标题居中*/
+            text-align: center;
+        }
+        .dream{
+            margin-left:10%;
+        }
+        a{
+            text-decoration: none;
+            color:#272424ad;
+            font-size:18px;
+        }
+        .menuname{
+            color:black;
+        }
+        .two li{
+            color:#272424ad;
+        }
+        .s{
+            margin-top:10px;
+            line-height:180%;
+            font-size: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="help">
+        <div id="mainner">
+            <div class="headername"><b>文雅鹅的
+                <span style="color:aqua; font-size: 28px;">愿</span>
+                <span style="color:rgb(228, 247, 63)">望</span>
+                <span style="color:#aef57f; font-size: 28px;">清</span>
+                <span style="color:rgb(243, 67, 44)">单</span>
+            </b></div>
+            <ul class="dream">
+                <li class="one">
+                    <a href="#" class="menuname">旅行 <i style="font-size:15px;">Body or mind, there must be one on the way</i></a>
+                    <ul class="two">
+                        <br/>
+                        <li>厦门</li>
+                        <li>四川</li>
+                        <li>日本</li>
+                        <li>长洲岛</li>
+                    </ul>
+                </li>
+                <br/>
+                <li class="one">
+                    <a href="#" class="menuname">购物清单 <i style="font-size:15px;">双十一没剁手， 我后悔了，非常的！</i></a>
+                    <ul class="two">
+                        <br/>
+                        <li>国誉自我</li>
+                        <li>一大堆笔</li>
+                        <li>一堆衣服</li>
+                        <li>2018ipad</li>
+                    </ul>
+                </li>
+                <br/>
+                <li class="one">
+                    <a href="#" class="menuname">学习目标 <i style="font-size:15px;">“感到迷茫的时候就背单词呀！”</i></a>
+                    <ul class="two">
+                        <br/>
+                        <li>准备考英语</li>
+                        <li>马克思不挂科</li>
+                        <li>jQuery学习中</li>
+                        <li>数据结构艰难的学习中</li>
+                    </ul>
+                </li>
+                <br/>
+                <li class="one">
+                    <a href="#" class="menuname">近期愿望 <i style="font-size:15px;">“距离2019还剩一个月，准备好了嘛？”</i></a>
+                    <ul class="two">
+                        <br/>
+                        <li>想瘦想瘦想瘦</li>
+                        <li>有钱难买国誉自我</li>
+                        <li>听到一个人的生日祝福</li>
+                        <li>元旦想回家，求学校补课人性化</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div id="bottom">
+            <div class="c">
+                <div id="no" style="font-weight: bold">20岁</div>                
+                <div id="well"><a href="#" style="font-size: 12px;">- 11.30 生日快乐鸭 -</a></div>
+                <div>
+                    / 突然想想还有好多事情没做啊，不过幸好还有时间，还有一路陪伴我的人呐 /
+                </div>  
+            </div>
+            <div class="s">
+                <div>周三某一时刻突然从床上蹦起来想做个网页，主要想复习一下最近学的东西。
+                    最后我想说，再给我次机会，我一定好好学css的布局！！！</div>
+                <div>© 2018.11.29 Jovia All Rights Reserved.</div>
+        </div>
+        </div>
+    </div>
+    <script>
+
+        //点击生日快乐 弹出“祝福+1”
+        var goodwell=document.getElementById("well");
+        goodwell.onclick=function(){
+            alert("收到的祝福+1");
+        }
+        
+        var not1=document.getElementById("no");
+        not1.onmouseover=function(){
+            no.innerHTML="没秃";
+        }
+
+        var not2=document.getElementById("no");
+        not2.onmouseout=function(){
+            no.innerHTML="20岁";
+        }
+
+       $(".menuname").next().hide();
+       $(".menuname").on('mouseover',function(){
+           $(this).next().show()
+           .parent().siblings().children('ul').hide();
+       });
+       $(".two").on('mouseleave',function(){
+           $(this).hide();
+       });
+    </script>
+</body>
+</html>
