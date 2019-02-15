@@ -1,0 +1,216 @@
+/* 消除系统默认样式 */
+*{
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style:none;
+}
+
+#menuBtn{
+    position:absolute;
+    top:10px;
+    left:50px;
+    z-index:9;  /*元素的堆叠属性 */
+}
+#menuBtn img{
+    width:30px;
+    height:30px;
+    cursor:pointer;
+}
+
+#menu{
+    display:none;
+    font-size:20px;
+    width:300px;
+    height:280px;
+    position:absolute;
+    z-index:5;
+    top:50px;
+    left:30px;
+    background-color: white;
+    opacity:0.9;
+    border-radius: 20px;   /*what*/
+}
+
+.b1>ul>li{  /*子元素选择器*/
+    padding:20px;
+}
+
+#text{
+    font-size:35px;
+    color:white;
+    position:absolute;
+    top:200px;
+    left:100px;
+    z-index:9;
+    text-align:left;
+}
+
+/* 滑动模块 */
+.slider, .slider-pics img, .slider-circle{
+    height:600px;
+}
+.slider{
+    text-align:center;
+    margin:0 auto;
+    position:relative;
+}
+
+.slider-pics, .slider-nav, .slider-pre, .slider-next{
+    position:absolute;
+    z-index:8;
+}
+.slider-pics img{
+    boder:none;
+}
+.slider-circle{
+    position:relative;
+}
+.slider-nav{
+    margin-left:-51px;
+    position:absolute;
+    left:50%;
+    bottom:4px;
+}
+.slider-nav li{
+    background: #eee9e9;
+    border-radius:50%;
+    color:#fff;
+    cursor:pointer;
+    margin:0 2px;
+    overflow:hidden;
+    text-align:center;
+    display:inline-block;
+    height:10px;
+    line-height:18px;
+    width:10px;
+}
+.slider-nav .slider-item-selected{
+    background: rgba(160, 158, 158, 0.521); 
+}
+.slider-button a{
+    background: rgba(0,0,0,0.2);
+    color:#fff;
+    text-align:center;
+    display:block;
+    font-size:22px;
+    width:28px;
+    height:62px;
+    line-height:62px;
+    margin-top:-31px;
+    position:absolute;
+    top:50%;
+}
+.slider-button a:hover{
+    background: rgba(0,0,0,0.4);
+}
+.slider-next{
+    left:100%;
+    margin-left:-27px;
+}
+#exploreBtn{
+    margin-top:20px;
+    text-align:center;
+    line-height:40px;
+    padding:5px;
+    font-size:25px;
+    border:1px solid white;
+    width:150px;
+    height:40px;
+    cursor:pointer;
+}
+
+/* 中间简单图文模块 */
+#middle{
+    margin:250px;
+}
+
+#leftText{
+    width: 300px;
+    height:400px;
+    overflow:hidden;
+    left:20%;
+}
+
+#rightImg{
+    width:320px;
+    display:block;
+    position: absolute;
+    right:350px;
+    top:800px;
+}
+
+#name{
+    font-weight:bold;
+    font-size:40px;
+    position: absolute;
+    right:375px;
+    top:770px;
+    z-index:2;
+}
+
+#view{
+    width: 150px;
+    height:40px;
+    border:1px solid black;
+    margin-top:-150px;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+/* 一排动态图 */
+#detailImg{
+    width:90%;
+    margin:150px auto;
+}
+
+#detailImg img{
+    float:left;
+    cursor: pointer;
+    width: 25%;
+    z-index:0;
+    transition: all 0.5s;
+}
+
+#detailImg img:hover{
+    transform:scale(1.2,1.2);
+}
+
+
+/* 底部banner */
+
+#contact{
+    font-weight: bold;
+    width:20%;
+    margin:100px auto;
+}
+
+#contact input{
+    display:block;
+    position: relative;
+    left:-120px;
+    width: 400px;
+    height: 40px;
+    margin-top:30px;
+    text-align:center;
+}
+
+#buttom{
+    height:150px;
+    bottom:0;
+    background-color:black;
+    color:white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#buttom ul li{
+    display:inline;
+    margin :20px;
+    position: relative;
+}
